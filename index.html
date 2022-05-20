@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Pomodoro widget</title>
+
+  <!-- Search engine SEO meta tags -->
+  <meta name="keywords"
+    content="Pomodoro Timer, Pomodoro Widget, Pomodoro, OBS Pomodoro, OBS Timer, OBS Studio,akashgiri.com,Akash Giri,akashgiri,akashgiricse,Akash,Giri,Software Engineer,Software Developer, Online Educator" />
+  <meta name="description" content="Pomodoro timer widget for OBS studio." />
+  <meta name="author" content="Akash Giri" />
+
+</head>
+
+<body style="background-color: rgb(0 0 0 / 0%);margin: 0px auto;overflow: hidden;">
+  <script src="countdown.js"></script>
+
+  <div class="container">
+    <button style="cursor: pointer;" id="tomato" type="button" onclick="updateDuration()">
+      <div class="imageContainer">
+        <img src="tomato-emoji-by-google.png">
+      </div>
+    </button>
+
+    <div id="countdown"><a id="start-timer-display">50</a>:00</div>
+
+
+    <div class="buttons">
+      <button style="cursor: pointer;" type="button" onclick="playPauseCountdown()">
+        <div class="imageContainer">
+          <img id="playPause" src="playButton4x.png">
+        </div>
+      </button>
+      <button style="cursor: pointer;" type="button" onclick="restartCountdown()">
+        <div class="imageContainer" id="resetButton">
+          <img src="resetButton4x.png">
+        </div>
+      </button>
+    </div>
+
+    <audio id="yoScottAudio">
+      <source src="YoScott.m4a" type="audio/mpeg">
+    </audio>
+  </div>
+</body>
+
+</html>
